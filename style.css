@@ -1,0 +1,86 @@
+body {
+  margin: 0;
+  padding: 0;
+}
+
+.background {
+  background-image: url(background.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  border-bottom-style: solid;
+}
+.Bar {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  height: 100px;
+  background-color: #f4f4f4;
+  opacity: 0.9;
+  position: sticky;
+  top: 0;
+  border-bottom: 1px solid lightgray;
+  flex-wrap: wrap;
+}
+
+.menu {
+  margin-right: 53px;
+  color: inherit;
+  text-decoration: none;
+}
+.Home {
+  margin-left: 100px;
+  color: inherit;
+  text-decoration: none;
+}
+
+/*Coloum-1*/
+.Container {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+.Coloum1 {
+  margin: 100px;
+  width: 900px;
+  height: 350px;
+  border-radius: 7px;
+  background-color: #f4f4f4;
+  display: flex;
+  flex-direction: column;
+  opacity: 0.6;
+}
+.Text {
+  margin: 20px;
+  text-align: center;
+  margin-bottom: 85px;
+  font-weight: bold;
+  color: black;
+}
+.Text1 {
+  font-size: 58px;
+  font-family: "Bebas Neue", sans-serif;
+
+  padding-top: 15px;
+}
+.Text2 {
+  font-size: 60px;
+  font-family: "Anton", sans-serif;
+}
+.Text3 {
+  font-size: 40px;
+  font-family: "Anton", sans-serif;
+  font-family: "Lilita One", sans-serif;
+  font-family: "Anton", sans-serif;
+  padding-bottom: 8px;
+}
+.tc {
+  font-size: 45px;
+}
+
+.card-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}

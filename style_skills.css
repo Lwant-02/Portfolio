@@ -1,0 +1,110 @@
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.Container {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+}
+.SkillContainer {
+  width: 350px;
+  height: 400px;
+  background-color: lightgray;
+  border-radius: 10px;
+  display: inline-block;
+  margin: 0 auto;
+  margin-top: 50px;
+}
+.HomeContainer {
+  width: 700px;
+  border-radius: 10px;
+  margin: 0 auto;
+  margin-top: 50px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+.imageContainer {
+  width: 100px;
+  height: 100px;
+  background-color: white;
+  margin: 0 auto;
+  margin-top: 15px;
+  border-radius: 30px;
+}
+.img {
+  width: 100px;
+  height: 100px;
+  overflow: hidden;
+  border-radius: 30px;
+}
+.LanguageContainer {
+  margin-top: 30px;
+}
+.Python,
+.Java,
+.Java-Script,
+.HTML,
+.CSS {
+  margin-top: 10px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding: 0 15px;
+  font-family: Georgia, "Times New Roman", Times, serif;
+}
+.Text {
+  text-transform: uppercase;
+  font-size: 10px;
+}
+.skill-bar {
+  margin-top: 10px;
+  width: 250px;
+  height: 5px;
+  border-radius: 2px;
+  background-color: #282828;
+}
+.skill-per {
+  height: 5px;
+  background-color: #d13639;
+  border-radius: 2px;
+  position: relative;
+  animation: fillBars;
+  animation-duration: 2.5s;
+  animation-delay: 1s;
+}
+.skill-per::before {
+  position: absolute;
+  content: attr(per);
+  padding: 2px 4px;
+  font-family: "Times New Roman", Times, serif;
+  background-color: white;
+  border-radius: 4px;
+  font-size: 10px;
+  top: -30px;
+  right: 0;
+  transform: translate(50%);
+}
+.skill-per::after {
+  content: "";
+  position: absolute;
+  width: 5px;
+  height: 5px;
+  background-color: white;
+  top: -11px;
+  right: 0;
+  transform: translateX(50%);
+  rotate: 45deg;
+  border-radius: 1px;
+}
+@keyframes fillBars {
+  from {
+    width: 0;
+  }
+  to {
+    width: 100%;
+  }
+}

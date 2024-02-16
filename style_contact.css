@@ -1,0 +1,55 @@
+body {
+  margin: 0;
+  padding: 0;
+}
+
+.Container {
+  margin: 0 auto;
+  width: 500px;
+  height: 500px;
+  margin-top: 50px;
+  border: solid 1px black;
+  border-radius: 15px;
+  box-shadow: 5px 5px black;
+}
+.fa {
+  font-size: 120px;
+  margin-top: 9px;
+}
+
+.Text {
+  font-size: 10px;
+  align-items: center;
+}
+.logo-container {
+  display: flex;
+  justify-content: center;
+}
+.Info-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  margin-top: 30px;
+}
+.info {
+  margin-top: 35px;
+  padding-left: 30px;
+  font-size: 30px;
+}
+.name {
+  height: 5px;
+  background-color: #d13639;
+  border-radius: 2px;
+  position: relative;
+  font-size: 10px;
+  color: aliceblue;
+  font-family: Georgia, "Times New Roman", Times, serif;
+  top: -15px;
+}
+.name::before {
+  content: attr(per);
+  position: absolute;
+  padding: 2px 4px;
+  background-color: black;
+  border-radius: 2px;
+}
